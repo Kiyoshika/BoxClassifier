@@ -50,6 +50,4 @@ print("Random Forest: \t\t", round(rf_cv,3))        # 0.788
 print("SVC: \t\t\t", round(svc_cv,3))               # 0.867
 ```
 
-Note that I didn't use a seed, so your results may differ slightly if you reproduce.
-
 We can see that (in this case) box classifier is only surpassed by SVC with both having a very decent F1 score.
