@@ -22,8 +22,8 @@ bc.predict(xtest)
 ```
 
 ### Example
-I used sklearn's make_classification to test performance on synthetic data sets.
-I'm using random_state = 42 as a seed.
+I used sklearn's make_classification to test performance on synthetic data sets. \
+I'm using ```random_state = 42``` as a seed.
 
 ```python
 sample_data = make_classification(n_features = 100, n_samples = 1000, n_informative = 15, n_redundant = 40, class_sep = 0.25, random_state = 42)
