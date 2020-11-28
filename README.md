@@ -4,11 +4,22 @@
 An original classification algorithm I wrote based off of partitioning the feature space into equal sizes and finding the dominant class in each partition.
 
 ### Limitations
-Currently only supports binary classification problems. Will expand in the near future.
+* Currently only supports binary classification problems. Will expand in the near future.
+* Currently only accepts numpy arrays as inputs; this is easy to fix but I'm lazy at the moment.
+
+### Dependencies
+* numpy, pandas
 
 ### Hyperparameters
 * partitions (default = 20)
   * This parameter controls how many times to partition the feature space. Depending on the dataset, this parameter can cause a lot of variance. It's recommended to explore a wide range of values, e.g from 5 --> 200.
+  
+### Creating the object
+```python
+bc = BoxClassifier(100)
+bc.fit(xtrain, ytrain) # numpy arrays
+bc.predict(xtest)
+```
 
 ### Example
 I used sklearn's make_classification to test performance on synthetic data sets.
