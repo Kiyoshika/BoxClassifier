@@ -6,6 +6,7 @@ An original classification algorithm I wrote based off of partitioning the featu
 ### Limitations
 * Currently only supports binary classification problems. Will expand in the near future.
 * Currently only accepts numpy arrays as inputs; this is easy to fix but I'm lazy at the moment.
+* Performs poorly on imbalanced datasets (even after resampling); this is something I'm actively working on.
 
 ### Dependencies
 * numpy, pandas
